@@ -1,0 +1,19 @@
+La teva CPU i memòria és la següent: 
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         711  7.4  0.7 2125700 100756 ?      Ssl  09:47   4:50 /usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         683  4.8  0.9 463232 141700 tty7    Rsl+ 09:47   3:11 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      149811  1.1  0.0  28080  5104 ?        S    10:52   0:00 (udev-worker)
+kali        2401  0.8  0.8 1182544 117424 ?      Sl   09:48   0:34 xfwm4 --display :0.0 --sm-client-id 28bb7aa09-669c-4102-92b8-2f1d1fa7ba4d
+root         655  0.8  0.3 1942996 53332 ?       Ssl  09:47   0:34 /usr/bin/containerd
+
+
+L'espai en el teu disc és: 
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            6.8G     0  6.8G   0% /dev
+tmpfs           1.4G  1.1M  1.4G   1% /run
+/dev/sda1        79G   17G   58G  23% /
+tmpfs           6.9G     0  6.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           1.4G  120K  1.4G   1% /run/user/1000
