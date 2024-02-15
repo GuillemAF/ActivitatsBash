@@ -1,0 +1,11 @@
+
+Boneees! he fet el script personalitzat a un altre github!
+
+t'el deixo aquí i com no, disculpa per les molèsties:
+
+
+https://github.com/GuillemAF/Cannonball.git
+
+
+És un script de OSINT (inteligència open source) que ja tenia mig fet i he pensat, doncs mira estaria guapo en plan ficarli en aquesta tasca perque me l'he currat bastant. Si pots obre'ho amb kali perquè sinó t'hauràs d'instal·lar algunes eines que estan a la descripció del github pero bueno si ho fas amb ubuntu és un moment.
+

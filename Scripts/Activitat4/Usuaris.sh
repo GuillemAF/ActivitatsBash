@@ -25,7 +25,7 @@ then
 
 fi
 
-if [ "$RES" == "X" ] || [ "RES" == "x" ]
+if [ "$RES" == "X" ] || [ "$RES" == "x" ]
 then 
 	echo -e "Digues el nom de l'usuari que vols eliminar: "
 	read NOM
