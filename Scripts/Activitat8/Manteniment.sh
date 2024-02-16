@@ -29,13 +29,63 @@ then
 	apt-get dist-upgrade
 fi
 
-echo -e "De quins serveis t'agradaría saber-ne l'estat?:"
+echo -e "De quins serveis t'agradaría saber-ne l'estat? Clica X per aturar la selecció:"
 
 BOOL="false"
 
 while [ "$BOOL" == "false" ]
 do
 	read BOOL
+	if [ "$BOOL" == "ssh" ]
+	then 
+		systemctl status ssh
+		echo "desitjes reiniciar-lo? 'S'/'N'"
+		read SER
+		if [ "$SER" == "S" ]
+		then 
+			systemctl restart ssh
+		fi
+
+	fi
+
+	if [ "$BOOL" == "mysql" ]
+	then 
+		systemctl status mysql
+		echo "desitjes reiniciar-lo? 'S'/'N'"
+		read SER
+		if [ "$SER" == "S" ]
+		then 
+			systemctl restart mysql
+		fi
+
+	fi
+
+	if [ "$BOOL" == "ftp" ]
+	then 
+		systemctl status ftp
+		echo "desitjes reiniciar-lo? 'S'/'N'"
+		read SER
+		if [ "$SER" == "S" ]
+		then 
+			systemctl restart ftp
+		fi
+
+	fi
+	
+	if [ "$BOOL" == "apache2" ]
+	then 
+		systemctl status apache2
+		echo "desitjes reiniciar-lo? 'S'/'N'"
+		read SER
+		if [ "$SER" == "S" ]
+		then 
+			systemctl restart apache2
+		fi
+
+	fi
+	
+
+
 	if [ "$BOOL" == "X" ]
 	then
 		break
